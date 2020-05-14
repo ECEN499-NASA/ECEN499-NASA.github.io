@@ -1,0 +1,18 @@
+---
+title: "Acronyms"
+---
+
+* CWS: Caution and Warning System
+* EMU: Extravehicular Mobility Unit
+* FIFO: First In First Out
+* FMC: FPGA Mezzanine Card
+* FPGA: Field Programmable Gate Array
+* HPC: High Pin Count
+* IP: Intellectual Property
+* LPC: Low Pin Count
+* LVDS: Low-Voltage Differential Signal
+* NASA: National Aeronautics and Space Administration
+* PLSS: Portable LIfe Support System
+* RISC: Reduced Instruction Set Computer
+* TMR: Triple Modular Redundancy
+* xEMU: Exploration EMU

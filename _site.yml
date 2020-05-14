@@ -1,0 +1,25 @@
+name: "NASA"
+navbar:
+  title: "NASA"
+  left:
+    - text: "Acronyms"
+      href: ./acronyms.html   
+    - text: ""   
+      menu:
+        - text: ""
+          href:  
+        - text: "---------------"             
+
+          
+output_dir: '.'
+
+output: 
+  html_document:
+    css: styles.css
+    highlight: tango
+    theme: readable
+    toc: true
+    toc_float: true
+    fig_height: 6
+    fig_width: 12
+    fig_align: 'center'  
