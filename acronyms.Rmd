@@ -12,7 +12,7 @@ title: "Acronyms"
 * LPC: Low Pin Count
 * LVDS: Low-Voltage Differential Signal
 * NASA: National Aeronautics and Space Administration
-* PLSS: Portable LIfe Support System
+* PLSS: Portable Life Support System
 * RISC: Reduced Instruction Set Computer
 * TMR: Triple Modular Redundancy
 * xEMU: Exploration EMU

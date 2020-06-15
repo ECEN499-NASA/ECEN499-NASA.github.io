@@ -1,7 +1,7 @@
 ---
-title: "RISC-V TMR CWS"
-subtitle: "Polar Fire -- II"
-author: "TEAM E -- Chris, Kyle, Jonah, Spencer"
+title: "Polar Fire -- II"
+subtitle: "TEAM E"
+author: "Chris, Kyle, Jonah, Spencer"
 date: "Spring 2020"
 ---
 
