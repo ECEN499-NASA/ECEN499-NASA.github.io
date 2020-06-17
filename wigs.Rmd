@@ -1,20 +1,15 @@
 ---
 title: "Weekly Reports"
+subtitle: "WIGS"
 ---
 
-## [Project Proposal](./wigs/BYUI ECEN499 S20 Proposal.htm)
-
-## [Schedule]()
-
-## WIGS
-
-* Week 1
-* Week 2
-* Week 3
-* Week 4
-* Week 5-6
-* Week 7
-* Week 8
+* [Week 1](./wigs/WIGS-W01.pptx)
+* [Week 2](./wigs/WIGS-W02.pptx)
+* [Week 3](./wigs/WIGS-W03.pptx)
+* [Week 4](./wigs/WIGS-W04.pptx)
+* [Week 5-6](./wigs/WIGS-W05_06.pptx)
+* [Week 7](./wigs/WIGS-W07.pptx)
+* [Week 8](./wigs/WIGS-W08.pptx)
 * Week 9
 * Week 10
 * Week 11

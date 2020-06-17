@@ -2,6 +2,23 @@ name: "NASA SP-20"
 navbar:
   title: "NASA SP-20"
   left:
+    - text: "Reports"
+      menu:
+        - text: "Proposal"
+          href: ./proposal.html
+        - text: "---------------" 
+        - text: "Schedule"
+          #href: 
+        - text: "---------------"    
+        - text: "Weekly Reports"
+          href: ./wigs.html     
+    - text: "Downloads"
+      href: ./download.html
+    - text: "Acronyms"
+      href: ./acronyms.html   
+    - text: "Winter 2020"
+      href: https://ecen499-nasa.github.io/WI_20/index.html
+      #href: ./WI_20/index.html 
     - text: "Executive Summaries"
       menu:
         - text: "Chris Porter"
@@ -11,18 +28,10 @@ navbar:
         - text: "Spencer Cheney"
           href: ./executive/cheney.html
         - text: "Kyle Tolliver"
-          href: ./executive/tolliver.html 
-    - text: "Weekly Reports"
-      href: ./wigs.html       
-    - text: "Downloads"
-      href: ./download.html
-    - text: "Acronyms"
-      href: ./acronyms.html   
-    - text: "Winter 2020"
-      href: https://ecen499-nasa.github.io/WI_20/index.html
-      #href: ./WI_20/index.html       
-    - text: "Contact Us"
-      href: ./contact.html    
+          href: ./executive/tolliver.html  
+        - text: "---------------" 
+        - text: "Contact Us"
+          href: ./contact.html    
           
 output_dir: '.'
 
@@ -31,5 +40,5 @@ output:
     css: ./site_libs/styles.css
     highlight: tango
     theme: readable
-    #toc: true
-    #toc_float: true 
+    toc: true
+    toc_float: true 

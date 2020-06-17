@@ -3,4 +3,6 @@ title: "Polar Fire -- II"
 date: "Spring 2020"
 ---
 
+## Project Description
 
+Create and test a system using Triple Modular Redundancy (TMR) with various configurations of the RISC-V open source instruction set on Microsemi’s PolarFire radiation tolerant FPGA. This is to test the possibility of using RISC-V architecture in space, specifically the possibility of implementing this system in the Caution and Warning System (CWS) in the xEMU.

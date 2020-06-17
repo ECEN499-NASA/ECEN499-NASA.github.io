@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="BYU-Idaho ECEN 499   W20 and S20 Senior Design Team" />
 
 
-<title>Contact Us</title>
+<title>Proposal</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -395,66 +396,58 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Contact Us</h1>
-<h3 class="subtitle">TEAM E</h3>
+<h1 class="title toc-ignore">Proposal</h1>
+<h3 class="subtitle">Triple Modular Redundancy Implemented Through RISC-V Architecture on an PolarFire FPGA</h3>
+<h4 class="author">BYU-Idaho ECEN 499 <br /> W20 and S20 Senior Design Team</h4>
+<h4 class="date">525 S Center ST, STC 320Y, Rexburg, Idaho 83460-1415 <br /> April 25, 2020</h4>
 
 </div>
 
 
-<div id="members" class="section level2">
-<h2>Members</h2>
-<div id="chris-porter" class="section level3">
-<h3>Chris Porter</h3>
-<div id="team-leader" class="section level5">
-<h5>Team Leader</h5>
+<div id="team-members" class="section level2">
+<h2>Team members:</h2>
+<div id="winter-2020" class="section level3">
+<h3>Winter 2020:</h3>
+<p>Zac Carico, James Thomas, Sam Bagley, Max Bakes, Michael Ashford</p>
+</div>
+<div id="spring-2020" class="section level3">
+<h3>Spring 2020:</h3>
+<p>Chris Porter, Jonah Boe, Spencer Cheney, Kyle Tolliver</p>
+</div>
+<div id="instructor" class="section level3">
+<h3>Instructor:</h3>
+<p>Dr. Kevin Smith</p>
+</div>
+</div>
+<div id="description" class="section level2">
+<h2>Description:</h2>
+<p>Create and test a system using Triple Modular Redundancy (TMR) with various configurations of the RISC-V open source instruction set on Microsemi’s PolarFire radiation tolerant FPGA. This is to test the possibility of using RISC-V architecture in space, specifically the possibility of implementing this system in the Caution and Warning System (CWS) in the xEMU.</p>
+</div>
+<div id="methodology" class="section level2">
+<h2>Methodology:</h2>
+<p>The finished PCB designed by last semesters senior design team will be manually populated and soldered if an SMT assembly company cannot be found.</p>
+<p>To implement the TMR RISC-V cores, and program the PolarFire board, Microsemi’s IDE will be used to create the VHDL code. There is only one machine licensed for the software, so a network will be established at the home of one team member where that machine can be accessed. This will allow all members access to the system remotely. This is of course is contingent on whether permission is granted by the school to remove the machine from the lab.</p>
+</div>
+<div id="hardware" class="section level2">
+<h2>Hardware:</h2>
 <ul>
-<li><a href="mailto:por16015@byui.edu" class="email">por16015@byui.edu</a></li>
-<li><a href="tel:%207192331788">719-233-1788</a></li>
-</ul>
-</div>
-</div>
-<div id="jonah-boe" class="section level3">
-<h3>Jonah Boe</h3>
+<li>PolarFire FPGA by Microsemi</li>
+<li>LCD Screen</li>
+<li>Radiation Sensor (Geiger Counter)</li>
+<li>Heartrate Monitor</li>
+<li>Pressure Sensor</li>
+<li>Temperature/Humidity Sensor</li>
+<li>Custom PCB with headers for GPIO, SPI, I2C, and UART
 <ul>
-<li><a href="mailto:boe12005@byui.edu" class="email">boe12005@byui.edu</a></li>
+<li>Ordered from China</li>
+</ul></li>
+<li>LEDs, switches, buzzers</li>
 </ul>
+<p>Our custom PCB will house the LCD, the various sensors and components in use, and the connector that will attach onto the FPGA. We wanted to focus on monitoring astronaut vitals while in their suits. The heartrate monitor will look out for any elevations that could indicate problems. The temperature and humidity sensor will be used for temperature control in the suit. The pressure sensor will look out for suit leaks. The radiation sensor will monitor outside conditions and alert the astronaut to critical amounts of radiation. LEDs and buzzers will supplement the LCD screen in alerting the astronaut to danger.</p>
 </div>
-<div id="spencer-cheney" class="section level3">
-<h3>Spencer Cheney</h3>
-<ul>
-<li><a href="mailto:che15011@byui.edu" class="email">che15011@byui.edu</a></li>
-<li><a href="tel:%202082061399">208-206-1399</a></li>
-</ul>
-</div>
-<div id="kyle-tolliver" class="section level3">
-<h3>Kyle Tolliver</h3>
-<ul>
-<li><a href="mailto:tol17001@byui.edu" class="email">tol17001@byui.edu</a></li>
-<li><a href="tel:%208053676723">805-367-6723</a></li>
-</ul>
-</div>
-</div>
-<div id="sponsors-and-directors" class="section level2">
-<h2>Sponsors and Directors</h2>
-<div id="wade-randall-s." class="section level3">
-<h3>Wade, Randall S.</h3>
-<ul>
-<li><a href="mailto:randall.s.wade@nasa.gov" class="email">randall.s.wade@nasa.gov</a></li>
-</ul>
-</div>
-<div id="zac-carico" class="section level3">
-<h3>Zac Carico</h3>
-<ul>
-<li><a href="mailto:Car16115@byui.edu" class="email">Car16115@byui.edu</a></li>
-<li><a href="tel:%208322701503">832-270-1503</a></li>
-</ul>
-</div>
-<div id="brother-k.-smith" class="section level3">
-<h3>Brother K. Smith</h3>
-<ul>
-<li><a href="mailto:smithk@byui.edu" class="email">smithk@byui.edu</a></li>
-</ul>
-</div>
+<div id="deliverables" class="section level2">
+<h2>Deliverables:</h2>
+<p>First deliverable will be this proposal. Afterwards, there will be a weekly status update on the project. At the end of the project, there will be the source code and documentation for the project, report on all research and testing done, JSC Form 290, completed PCB, and the PolarFire FPGA flashed with the final system design.</p>
 </div>
 
 
