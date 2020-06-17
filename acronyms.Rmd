@@ -15,4 +15,5 @@ title: "Acronyms"
 * PLSS: Portable Life Support System
 * RISC: Reduced Instruction Set Computer
 * TMR: Triple Modular Redundancy
+* WIGS: Wildly Important Goals
 * xEMU: Exploration EMU

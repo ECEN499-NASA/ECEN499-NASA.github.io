@@ -1,7 +1,5 @@
 ---
 title: "Polar Fire -- II"
-subtitle: "TEAM E"
-author: "Chris, Kyle, Jonah, Spencer"
 date: "Spring 2020"
 ---
 

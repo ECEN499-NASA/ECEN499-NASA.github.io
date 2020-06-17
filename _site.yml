@@ -2,11 +2,27 @@ name: "NASA SP-20"
 navbar:
   title: "NASA SP-20"
   left:
+    - text: "Executive Summaries"
+      menu:
+        - text: "Chris Porter"
+          href: ./executive/porter.html
+        - text: "Jonah Boe"
+          href: ./executive/boe.html
+        - text: "Spencer Cheney"
+          href: ./executive/cheney.html
+        - text: "Kyle Tolliver"
+          href: ./executive/tolliver.html 
+    - text: "Weekly Reports"
+      href: ./wigs.html       
+    - text: "Downloads"
+      href: ./download.html
     - text: "Acronyms"
-      href: ./acronyms.html 
+      href: ./acronyms.html   
     - text: "Winter 2020"
-      href: https://drive.google.com/file/d/1pX-Rlj2GsJD1lGXIgwoQaVHDpWbsPurT/view?usp=sharing             
-
+      href: https://ecen499-nasa.github.io/WI_20/index.html
+      #href: ./WI_20/index.html       
+    - text: "Contact Us"
+      href: ./contact.html    
           
 output_dir: '.'
 
@@ -15,8 +31,5 @@ output:
     css: ./site_libs/styles.css
     highlight: tango
     theme: readable
-    toc: true
-    toc_float: true
-    fig_height: 6
-    fig_width: 12
-    fig_align: 'center'  
+    #toc: true
+    #toc_float: true 

@@ -1,0 +1,42 @@
+---
+title: "Contact Us"
+subtitle: "TEAM E"
+---
+
+## Members
+
+### Chris Porter 
+
+##### Team Leader
+
+* por16015@byui.edu
+* [719-233-1788](tel: 7192331788)
+
+### Jonah Boe 
+
+* boe12005@byui.edu
+
+### Spencer Cheney 
+
+* che15011@byui.edu
+* [208-206-1399](tel: 2082061399)
+
+### Kyle Tolliver 
+
+* tol17001@byui.edu
+* [805-367-6723](tel: 8053676723)
+
+## Sponsors and Directors
+
+### Wade, Randall S.
+
+* randall.s.wade@nasa.gov
+
+### Zac Carico
+
+* Car16115@byui.edu
+* [832-270-1503](tel: 8322701503)
+
+### Brother K. Smith
+
+* smithk@byui.edu

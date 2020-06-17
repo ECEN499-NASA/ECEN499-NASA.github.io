@@ -9,7 +9,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Chris, Kyle, Jonah, Spencer" />
 
 
 <title>Polar Fire – II</title>
@@ -20,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 
 
@@ -236,69 +232,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -306,16 +239,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -328,26 +251,45 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">NASA</a>
+      <a class="navbar-brand" href="index.html">NASA SP-20</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="./acronyms.html">Acronyms</a>
-</li>
-<li>
-  <a href="https://webmailbyui-my.sharepoint.com/personal/kbs5_byui_edu/_layouts/15/onedrive.aspx?csf=1&amp;web=1&amp;e=eeUHkM&amp;cid=d2e07458-d1ed-44a6-8662-3800611b2fb8&amp;id=%2fpersonal%2fkbs5_byui_edu%2fDocuments%2fECEN499%2fECEN499S20_TeamE_PolarFireII_NASA&amp;FolderCTID=0x0120003C9503ED7F67A143A720FDA8DFAFBDB9">Onedrive</a>
-</li>
-<li class="dropdown">
+        <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    
+    Executive Summaries
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li class="dropdown-header"></li>
-    <li class="divider"></li>
+    <li>
+      <a href="./executive/porter.html">Chris Porter</a>
+    </li>
+    <li>
+      <a href="./executive/boe.html">Jonah Boe</a>
+    </li>
+    <li>
+      <a href="./executive/cheney.html">Spencer Cheney</a>
+    </li>
+    <li>
+      <a href="./executive/tolliver.html">Kyle Tolliver</a>
+    </li>
   </ul>
+</li>
+<li>
+  <a href="./wigs.html">Weekly Reports</a>
+</li>
+<li>
+  <a href="./download.html">Downloads</a>
+</li>
+<li>
+  <a href="./acronyms.html">Acronyms</a>
+</li>
+<li>
+  <a href="https://ecen499-nasa.github.io/WI_20/index.html">Winter 2020</a>
+</li>
+<li>
+  <a href="./contact.html">Contact Us</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -362,8 +304,6 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Polar Fire – II</h1>
-<h3 class="subtitle">TEAM E</h3>
-<h4 class="author">Chris, Kyle, Jonah, Spencer</h4>
 <h4 class="date">Spring 2020</h4>
 
 </div>
@@ -373,8 +313,6 @@ div.tocify {
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -407,32 +345,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
