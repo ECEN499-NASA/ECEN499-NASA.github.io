@@ -1,0 +1,43 @@
+Design Specifications:
+*Use VHDL
+*Multile configurations of RISC-V core (3)
+*Create a program to benchmark and test RISC-V cores
+*Microcontroller architecture with following features:
+ *10 LVDS Full Duplex UARTS
+ *TMR
+ *GPIO Pins
+ *SPI
+ *I2C
+*PCB that connects to the PolarFire's FMC HPC with the following features:
+ *LCD Screen
+ *3-Position Toggle Switches
+ *Ports for Full-Duplex LVDS UART using the provided FIFOs
+ *LEDs and Switches for testing
+ *ADC
+
+
+Things To Do:
+Testing SPI, I2C, GPIO, LVDS UART
+Finish LVDS UART Design (If it doesnt work)
+	FIFO
+	LVDS IP cannot pick what port it outputs to.
+Full Testing of SPI
+I2C Configured to communicate with sensors and Tested
+GPIO Input and Output as expected. 
+Finish Designing other core implementations
+Test Core Implementations for workability
+Benchmark core implementations and decide which is best
+SoftConsole: Driver modules need to be completed
+All driver modules need to be tested
+LCD Interface with paddle switch to display sensor information
+Assemble PCB
+
+Things Done:
+TMR
+1 core implementation
+	Interface with PCB modified (Solution - MIV_AXI)
+UART over microUSB (PuTTY)
+SPI Implemented, limited testing
+I2C Implemented, Output verified on SDA and SCL pins
+GPIO Implemented, limited testing (output)
+
