@@ -6,3 +6,11 @@ date: "Spring 2020"
 ## Project Description
 
 Create and test a system using Triple Modular Redundancy (TMR) with various configurations of the RISC-V open source instruction set on Microsemi’s PolarFire radiation tolerant FPGA. This is to test the possibility of using RISC-V architecture in space, specifically the possibility of implementing this system in the Caution and Warning System (CWS) in the xEMU.
+
+© Copyright BYUI ECEN 499, 2020
+
+###### *--- [Licensed](https://github.com/ECEN499-NASA/ECEN499-NASA.github.io/blob/master/LICENSE) under [MIT License](./site_libs/LICENSE.txt)*
+
+######  *--- Website is made with [Rmd files](https://rmarkdown.rstudio.com/index.html) and [Rstudio](https://rstudio.com/)*
+
+######  *--- Hosted on [github](https://github.com/ECEN499-NASA)*
