@@ -342,10 +342,20 @@ div.tocify {
       <a href="./proposal.html">Proposal</a>
     </li>
     <li class="divider"></li>
+    <li class="dropdown-header">Weekly Reports</li>
     <li class="dropdown-header">Schedule</li>
-    <li class="divider"></li>
     <li>
-      <a href="./wigs.html">Weekly Reports</a>
+      <a href="./wigs.html">WIGS</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Documentation</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">Budget</li>
+        <li class="dropdown-header">Presentation</li>
+        <li class="dropdown-header">Poster</li>
+        <li class="dropdown-header">Report</li>
+      </ul>
     </li>
   </ul>
 </li>
@@ -401,6 +411,9 @@ div.tocify {
 </div>
 
 
+<div id="github" class="section level5">
+<h5><a href="https://github.com/ECEN499-NASA">Github</a></h5>
+</div>
 <div id="members" class="section level2">
 <h2>Members</h2>
 <div id="chris-porter" class="section level3">
@@ -436,12 +449,6 @@ div.tocify {
 </div>
 <div id="sponsors-and-directors" class="section level2">
 <h2>Sponsors and Directors</h2>
-<div id="wade-randall-s." class="section level3">
-<h3>Wade, Randall S.</h3>
-<ul>
-<li><a href="mailto:randall.s.wade@nasa.gov" class="email">randall.s.wade@nasa.gov</a></li>
-</ul>
-</div>
 <div id="zac-carico" class="section level3">
 <h3>Zac Carico</h3>
 <ul>
@@ -453,6 +460,12 @@ div.tocify {
 <h3>Brother K. Smith</h3>
 <ul>
 <li><a href="mailto:smithk@byui.edu" class="email">smithk@byui.edu</a></li>
+</ul>
+</div>
+<div id="wade-randall-s." class="section level3">
+<h3>Wade, Randall S.</h3>
+<ul>
+<li><a href="mailto:randall.s.wade@nasa.gov" class="email">randall.s.wade@nasa.gov</a></li>
 </ul>
 </div>
 </div>
@@ -507,7 +520,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

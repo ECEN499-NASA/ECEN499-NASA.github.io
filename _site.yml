@@ -7,11 +7,18 @@ navbar:
         - text: "Proposal"
           href: ./proposal.html
         - text: "---------------" 
+        - text: "Weekly Reports"
         - text: "Schedule"
           #href: 
-        - text: "---------------"    
-        - text: "Weekly Reports"
+        - text: "WIGS"    
           href: ./wigs.html     
+        - text: "---------------"    
+        - text: "Final Documentation" 
+          menu: 
+            - text: "Budget"
+            - text: "Presentation"
+            - text: "Poster"
+            - text: "Report"
     - text: "Downloads"
       href: ./download.html
     - text: "Acronyms"

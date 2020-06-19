@@ -342,10 +342,20 @@ div.tocify {
       <a href="./proposal.html">Proposal</a>
     </li>
     <li class="divider"></li>
+    <li class="dropdown-header">Weekly Reports</li>
     <li class="dropdown-header">Schedule</li>
-    <li class="divider"></li>
     <li>
-      <a href="./wigs.html">Weekly Reports</a>
+      <a href="./wigs.html">WIGS</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Documentation</a>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">Budget</li>
+        <li class="dropdown-header">Presentation</li>
+        <li class="dropdown-header">Poster</li>
+        <li class="dropdown-header">Report</li>
+      </ul>
     </li>
   </ul>
 </li>
@@ -456,7 +466,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
