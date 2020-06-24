@@ -10,8 +10,8 @@ subtitle: "WIGS"
 * [Week 5-6](./wigs/WIGS-W05_06.pptx)
 * [Week 7](./wigs/WIGS-W07.pptx)
 * [Week 8](./wigs/WIGS-W08.pptx)
-* Week 9
-* Week 10
-* Week 11
-* Week 12
-* Week 13
+* [Week 9](./wigs/WIGS-W09.pptx)
+* [Week 10](./wigs/WIGS-W10.pptx)
+* [Week 11](./wigs/WIGS-W11.pptx)
+* [Week 12](./wigs/WIGS-W12.pptx)
+* [Week 13](./wigs/WIGS-W13.pptx)
