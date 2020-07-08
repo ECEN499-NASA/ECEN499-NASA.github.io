@@ -1,6 +1,7 @@
 ---
 title: "Contact Us"
 subtitle: "TEAM E"
+author: "Spring 2020"
 ---
 
 ##### [Github](https://github.com/ECEN499-NASA)

@@ -3,26 +3,49 @@ navbar:
   title: "NASA SP-20"
   left:
     - text: "Reports"
-      menu:
-        - text: "Proposal"
-          href: ./proposal.html
+      menu: 
+        - text: "Project Proposal"
+          href: ./wigs/BYUI ECEN499 S20 Proposal.htm
         - text: "---------------" 
-        - text: "Weekly Reports"
+        - text: "Weekly Deliverables" 
         - text: "Schedule"
-          #href: 
-        - text: "WIGS"    
-          href: ./wigs.html     
+          href: ./wigs/Project_Tasks_S20.xlsx
+        - text: "WIGS"
+          menu:
+          - text: "Week 1"
+            href: ./wigs/WIGS-W01.pptx
+          - text: "Week 2"
+            href: ./wigs/WIGS-W02.pptx
+          - text: "Week 3"
+            href: ./wigs/WIGS-W03.pptx
+          - text: "Week 4"
+            href: ./wigs/WIGS-W04.pptx
+          - text: "Week 5-6"
+            href: ./wigs/WIGS-W05_06.pptx
+          - text: "Week 7"
+            href: ./wigs/WIGS-W07.pptx
+          - text: "Week 8"
+            href: ./wigs/WIGS-W08.pptx
+          - text: "Week 9"
+            href: ./wigs/WIGS-W09.pptx
+          - text: "Week 10"
+            href: ./wigs/WIGS-W10.pptx
+          - text: "Week 11"
+            href: ./wigs/WIGS-W11.pptx
+          - text: "Week 12"
+            href: ./wigs/WIGS-W12.pptx
+          - text: "Week 13"
+            href: ./wigs/WIGS-W13.pptx
         - text: "---------------"    
-        - text: "Final Documentation" 
-          menu: 
-            - text: "Budget"
-            - text: "Presentation"
-            - text: "Poster"
-            - text: "Report"
-    - text: "Downloads"
-      href: ./download.html
-    - text: "Acronyms"
-      href: ./acronyms.html   
+        - text: "Final Deliverables"  
+        - text: "Budget"
+          href: ./final/budget.xlsx
+        - text: "Presentation"
+          href: ./final/presentation.pptx
+        - text: "Report"
+          href: ./final/report.html   
+    - text: "Code and Design"
+      href: ./code.html   
     - text: "Winter 2020"
       href: https://ecen499-nasa.github.io/WI_20/index.html
       #href: ./WI_20/index.html 
@@ -39,7 +62,7 @@ navbar:
         - text: "---------------" 
         - text: "Contact Us"
           href: ./contact.html    
-          
+
 output_dir: '.'
 
 output: 

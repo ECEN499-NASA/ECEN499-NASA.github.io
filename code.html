@@ -11,7 +11,7 @@
 
 
 
-<title>Acronyms</title>
+<title>Code/Design</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,6 +23,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 
@@ -339,21 +340,69 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="./proposal.html">Proposal</a>
+      <a href="./wigs/BYUI ECEN499 S20 Proposal.htm">Project Proposal</a>
     </li>
     <li class="divider"></li>
-    <li class="dropdown-header">Schedule</li>
-    <li class="divider"></li>
+    <li class="dropdown-header">Weekly Deliverables</li>
     <li>
-      <a href="./wigs.html">Weekly Reports</a>
+      <a href="./wigs/Project_Tasks_S20.xlsx">Schedule</a>
+    </li>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">WIGS</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="./wigs/WIGS-W01.pptx">Week 1</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W02.pptx">Week 2</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W03.pptx">Week 3</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W04.pptx">Week 4</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W05_06.pptx">Week 5-6</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W07.pptx">Week 7</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W08.pptx">Week 8</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W09.pptx">Week 9</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W10.pptx">Week 10</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W11.pptx">Week 11</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W12.pptx">Week 12</a>
+        </li>
+        <li>
+          <a href="./wigs/WIGS-W13.pptx">Week 13</a>
+        </li>
+      </ul>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Final Deliverables</li>
+    <li>
+      <a href="./final/budget.xlsx">Budget</a>
+    </li>
+    <li>
+      <a href="./final/presentation.pptx">Presentation</a>
+    </li>
+    <li>
+      <a href="./final/report.html">Report</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="./download.html">Downloads</a>
-</li>
-<li>
-  <a href="./acronyms.html">Acronyms</a>
+  <a href="./code.html">Code and Design</a>
 </li>
 <li>
   <a href="https://ecen499-nasa.github.io/WI_20/index.html">Winter 2020</a>
@@ -395,28 +444,44 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Acronyms</h1>
+<h1 class="title toc-ignore">Code/Design</h1>
 
 </div>
 
 
+<div id="pcb" class="section level2">
+<h2>PCB</h2>
 <ul>
-<li>CWS: Caution and Warning System</li>
-<li>EMU: Extravehicular Mobility Unit</li>
-<li>FIFO: First In First Out</li>
-<li>FMC: FPGA Mezzanine Card</li>
-<li>FPGA: Field Programmable Gate Array</li>
-<li>HPC: High Pin Count</li>
-<li>IP: Intellectual Property</li>
-<li>LPC: Low Pin Count</li>
-<li>LVDS: Low-Voltage Differential Signal</li>
-<li>NASA: National Aeronautics and Space Administration</li>
-<li>PLSS: Portable Life Support System</li>
-<li>RISC: Reduced Instruction Set Computer</li>
-<li>TMR: Triple Modular Redundancy</li>
-<li>WIGS: Wildly Important Goals</li>
-<li>xEMU: Exploration EMU</li>
+<li><a href="">Schematic</a></li>
 </ul>
+</div>
+<div id="arduino" class="section level2">
+<h2>Arduino</h2>
+<ul>
+<li><a href="">Zip file</a></li>
+<li><a href="">Github</a></li>
+</ul>
+</div>
+<div id="softconsole" class="section level2">
+<h2>SoftConsole</h2>
+<ul>
+<li><a href="">Zip file</a></li>
+<li><a href="">Github</a></li>
+</ul>
+</div>
+<div id="libero" class="section level2">
+<h2>Libero</h2>
+<ul>
+<li><a href="">Libero Projects</a></li>
+</ul>
+</div>
+<div id="website" class="section level2">
+<h2>Website</h2>
+<ul>
+<li><a href="./index.html">Website</a> <!-- * [Zip file]() --></li>
+<li><a href="">Github</a></li>
+</ul>
+</div>
 
 
 
@@ -468,7 +533,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
