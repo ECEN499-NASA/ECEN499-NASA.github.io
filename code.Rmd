@@ -5,23 +5,30 @@ title: "Code/Design"
 ## PCB
 
 * [Schematic]()
+* [Pictures]()
 
 ## Arduino
 
-* [Zip file]()
-* [Github]()
+* [Zip file](./downloads/Arduino.zip)
+* [Github](https://github.com/ECEN499-NASA/Arduino)
 
 ## SoftConsole
 
-* [Zip file]()
-* [Github]()
+* [Zip file](./downloads/SoftConsole.zip)
+* [Github](https://github.com/ECEN499-NASA/SoftConsole)
+
+### CPU Benchmark
+
+* [Zip file](./downloads/dhrystone.zip)
+* [Github](https://github.com/riscv/riscv-tests/tree/master/benchmarks/dhrystone)
 
 ## Libero
 
-* [Libero Projects]()
+* [Zip file]()
+* [Github](https://github.com/ECEN499-NASA/Libero)
 
 ## Website
 
 * [Website](./index.html)
 <!-- * [Zip file]() -->
-* [Github]()
+* [Github](https://github.com/ECEN499-NASA/ECEN-NASA.github.io)
