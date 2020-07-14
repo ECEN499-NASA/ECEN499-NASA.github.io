@@ -5,11 +5,11 @@ navbar:
     - text: "Reports"
       menu: 
         - text: "Project Proposal"
-          href: ./wigs/BYUI ECEN499 S20 Proposal.htm
+          href: ./wigs/S20-Proposal.pdf
         - text: "---------------" 
         - text: "Weekly Deliverables" 
         - text: "Schedule"
-          href: ./wigs/Project_Tasks_S20.xlsx
+          href: ./wigs/Project_Tasks_S20.pdf
         - text: "WIGS"
           menu:
           - text: "Week 1"
@@ -39,26 +39,25 @@ navbar:
         - text: "---------------"    
         - text: "Final Deliverables"  
         - text: "Budget"
-          href: ./final/budget.xlsx
+          href: ./final/budget.pdf
         - text: "Presentation"
-          href: ./final/presentation.pptx
+          href: ./final/presentation.pdf
         - text: "Report"
-          href: ./final/report.html   
+          href: ./final/report.pdf   
     - text: "Code and Design"
       href: ./code.html   
     - text: "Winter 2020"
       href: https://ecen499-nasa.github.io/WI_20/index.html
-      #href: ./WI_20/index.html 
     - text: "Executive Summaries"
       menu:
         - text: "Chris Porter"
-          href: ./executive/porter.html
+          href: ./final/porter.pdf
         - text: "Jonah Boe"
-          href: ./executive/boe.html
+          href: ./final/boe.pdf
         - text: "Spencer Cheney"
-          href: ./executive/cheney.html
+          href: ./final/cheney.pdf
         - text: "Kyle Tolliver"
-          href: ./executive/tolliver.html  
+          href: ./final/tolliver.pdf 
         - text: "---------------" 
         - text: "Contact Us"
           href: ./contact.html    

@@ -19,6 +19,7 @@ author: "Spring 2020"
 ### Jonah Boe 
 
 * boe12005@byui.edu
+* [707-815-4286](tel: 7078154286)
 * [LinkedIn](https://www.linkedin.com/in/jonahboe/)
 
 ### Spencer Cheney 
@@ -44,6 +45,6 @@ author: "Spring 2020"
 
 * smithk@byui.edu
 
-### Wade, Randall S.
+### Randall S. Wade
 
 * randall.s.wade@nasa.gov
