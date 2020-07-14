@@ -37,13 +37,15 @@ navbar:
           - text: "Week 13"
             href: ./wigs/WIGS-W13.pptx
         - text: "---------------"    
-        - text: "Final Deliverables"  
+        - text: "Final Deliverables" 
+        - text: "Report"
+          href: ./final/report.pdf  
         - text: "Budget"
           href: ./final/budget.pdf
         - text: "Presentation"
           href: ./final/presentation.pdf
-        - text: "Report"
-          href: ./final/report.pdf   
+        - text: "Poster"
+          href: ./final/poster.pdf 
     - text: "Code and Design"
       href: ./code.html   
     - text: "Winter 2020"

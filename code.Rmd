@@ -7,7 +7,7 @@ title: "Code/Design"
 ## PCB
 
 * [Schematics](./downloads/dev_PCB.zip)
-* [Pictures]()
+* [Pictures](./downloads/PCB_Pictures.zip)
 
 ## Arduino
 
@@ -26,10 +26,12 @@ title: "Code/Design"
 
 ## Libero
 
+* [Demo](./downloads/Demo.mov)
 * [Zip file](./downloads/Libero.zip)
 * [Github](https://github.com/ECEN499-NASA/Libero)
+* [Datasheets](./downloads/Datasheets.zip)
 
 ## Website
 
-* [Website](./index.html)
+* [Website](https://ecen499-nasa.github.io/)
 * [Github](https://github.com/ECEN499-NASA/ECEN-NASA.github.io)

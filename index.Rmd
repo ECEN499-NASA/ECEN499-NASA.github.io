@@ -11,7 +11,7 @@ knitr::include_graphics("./site_libs/images/PolarFire.png")
 
 ## Mission Statement
 
-Create and test a microcontroller using TMR with various configurations of the RISC-V open source instruction set on Microsemi’s PolarFire radiation tolerant FPGA. This is to test the possibility of using RISC-V architecture in space, specifically the possibility of implementing this system in the CWS in NASA’s newest space suit, the xEMU.
+Create and test a system using Triple Modular Redundancy (TMR) with various configurations of the RISC-V open source instruction set on Microsemi’s PolarFire radiation tolerant FPGA. This is to test the possibility of using RISC-V architecture in space, specifically the possibility of implementing this system in the Caution and Warning System (CWS) in the xEMU. 
 
 ### Goal
 
@@ -30,12 +30,6 @@ There are two main parts to this project the Libero module design and the Softco
 Last semester’s team left us with most of a working design for Libero. We edited the design to allow for a working Full Duplex UART and LVDS UART that transmits a differential signal but does not receive.
 
 We did the most work with SoftConsole. We added modules to operate the LVDS and Full-Duplex UART, check status of 10 GPIO switches, we started creating functions to output text to the LCD screen and to control the operation through the large switch on the PCB, and debugged the code that wasn’t working correctly. 
-
-<!-- #### Tools -->
-
-<!-- * Libero -  -->
-<!-- * SoftConsole -  -->
-<!-- * Arduino - Used to test communication  -->
 
 ### UART
 
@@ -65,6 +59,10 @@ We have the solution for the tutorial we followed implemented as one of our core
 
 ## PCB Assembly
 
+```{r pcb, fig.align='left', out.width='50%', echo = FALSE}
+knitr::include_graphics("./site_libs/images/pcb.png")
+```
+
 Assembling the PCB was rather straight forward. The only major hiccup was the proximity of the VGA connectors to one another. The sockets would not all be accessible at the same time for connection given their proximity to one another and the dimensions of a standard VGA cable connector. For this reason, it was decided to use VGA connectors with both 90-degree and 180-degree connections, staggering them so no two of the same were side by side.
 
 ## Drivers and UI Design
@@ -72,6 +70,8 @@ Assembling the PCB was rather straight forward. The only major hiccup was the pr
 Once a RISC-V core is built and loaded onto the FPGA, we can use SoftConsole, a software package to program softcores, to run our custom drivers and software on our cores. This is how we set up the interface with the PCB and how we planned on benchmarking the processors.
 
 We used the user interface that was set up by last semesters team and added functionality to allow the FPGA to communicate over UART, check the status of GPIO pins, we started on using it to create an interface to work with the LCD screen, and debugged and fixed many of the issues used to communicate with sensors.
+
+<br /> <br />
 
 ## Acronyms
 
