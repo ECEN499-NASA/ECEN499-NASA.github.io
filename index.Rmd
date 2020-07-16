@@ -5,7 +5,7 @@ author: "NASA -- ECEN 499 Design Team"
 date: "Spring 2020"
 ---
 
-```{r polarfire, fig.align='left', out.width='75%', echo = FALSE}
+```{r polarfire, fig.align='left', out.width='100%', echo = FALSE}
 knitr::include_graphics("./site_libs/images/PolarFire.png")
 ```
 
@@ -13,15 +13,11 @@ knitr::include_graphics("./site_libs/images/PolarFire.png")
 
 Create and test a system using Triple Modular Redundancy (TMR) with various configurations of the RISC-V open source instruction set on Microsemi’s PolarFire radiation tolerant FPGA. This is to test the possibility of using RISC-V architecture in space, specifically the possibility of implementing this system in the Caution and Warning System (CWS) in the xEMU. 
 
-### Goal
-
-The main goal of this semester was to get all communication, GPIO, LCD, and sensor functions created and to get one processor working with all of the requirements. While we weren’t able to complete all of the requirements. We were able to get to a point when with some debugging you should be able to fix all of the issues and create the functions needed to get this project working.
-
-### Completion 
-
-We were able to nearly complete all the requirements for a single core. All that is necessary is to debug and resolve the errors with the LVDS module, add in a LVDS module for receiving data, finish the function to communicate with the LCD screen, and fully test the SPI and I2C modules. Once each of these issues are fix for the core that is alright set up it should be easy to adjust the project to work with multiple types of cores.
-
 ## Microcontroller 
+
+```{r fpga, fig.align='left', out.width='65%', echo = FALSE}
+knitr::include_graphics("./site_libs/images/completedwork.png")
+```
 
 ### Design
 
@@ -31,9 +27,16 @@ Last semester’s team left us with most of a working design for Libero. We edit
 
 We did the most work with SoftConsole. We added modules to operate the LVDS and Full-Duplex UART, check status of 10 GPIO switches, we started creating functions to output text to the LCD screen and to control the operation through the large switch on the PCB, and debugged the code that wasn’t working correctly. 
 
+#### Hardware & Software
+
+* PolarFire FPGA
+* Libero
+* SoftConsole
+* Custom PCB - See [PCB Assembly](#PCB_Assembly)
+
 ### UART
 
-The biggest problem we encounter with the UART is timing. In the SoftConsole code in order to program the UART to operate at a specific baud rate they use a clock divider equation the becomes inaccurate when the baud rate gets to 1 MHz. The Libero LVDS module is very confusing and isn’t set up to work well with UART. Instead of taking in a single signal and turning one signal into an LVDS signal it reads from an array of signals and transmits them one at a time. To combat the issue we set the have the UART Tx connect to each of the input pins of the LVDS module since this is an array of 8 signals this makes the LVDS UART signal 8 times slower than it would normally be. We were only able to get the LVDS module to output a differential signal that ranges from 0 to 2 volts. All of the Libero documentations says that this is the module needed for LVDS documentation but we weren’t able to figure out how to configure the settings to output an LVDS signal. If try to fix this in the future looking at the low power settings of the LVDS module might be able to resolve this issue. 
+The LVDS Full-Duplex UART was set up using 3 IPs, two of them are used to create an LVDS signal and the other is used to receive and transmit UART signals. The PF_IOD_GENERIC_TX_C0_0 module turns the signal into an LVDS signal but in order to operate it we have to have clocks at different frequencies and one clock that is 90 degress out of phase. We included the PF_CCC_C0 to generate these clock signals As for the Full-Duplex UART, all that needed to change from last semester was the settings of the UART_apb module so it is configured correctly for Full-Duplex. Using these modules, we were able to transmit a working differential UART signal that ranges between 0 volts for low and 2 volts for high.
 
 ### SPI
 
@@ -71,6 +74,21 @@ Once a RISC-V core is built and loaded onto the FPGA, we can use SoftConsole, a 
 
 We used the user interface that was set up by last semesters team and added functionality to allow the FPGA to communicate over UART, check the status of GPIO pins, we started on using it to create an interface to work with the LCD screen, and debugged and fixed many of the issues used to communicate with sensors.
 
+## Future Developments
+
+* Finish the other three processor designs
+* Fix memory controller compatibility issues between AHB processors and AXI memory
+* Finish the LVDS UART module in Libero
+* Debug Softconsole code for LCD
+* Finish implementing functions for peripheral devices in SoftConsole (Heart Rate, Accelerometer, Barometer)
+* Test SPI and I2C receive functionality
+
+## Conclusions
+
+The main goal of this semester was to get all communication, GPIO, LCD, and sensor functions created and to get one processor working with all the requirements. While we weren’t able to complete all of the requirements. We were able to get to a point when with some debugging you should be able to fix all the issues and create the functions needed to get this project working. 
+
+Even with the set backs encountered with COVID-19 we were able to nearly complete all the requirements for a single core. All that is necessary is to debug and resolve the errors with the LVDS module, add in a LVDS module for receiving data, finish the function to communicate with the LCD screen, and fully test the SPI and I2C modules. Once each of these issues are fix for the core that is alright set up it should be easy to adjust the project to work with multiple types of cores. 
+
 <br /> <br />
 
 ## Acronyms
@@ -91,8 +109,6 @@ These are a few useful acronyms when working on this project:
 * RISC - Reduced Instruction Set Computer
 * TMR - Triple Modular Redundancy
 * xEMU - Exploratory EMU
-
-
 
 <br /> <br />
 

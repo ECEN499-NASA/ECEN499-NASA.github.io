@@ -27,7 +27,6 @@ title: "Code/Design"
 ## Libero
 
 * [Demo](https://youtu.be/ktFWQzqhLPE)
-* [Zip file](./downloads/Libero.zip)
 * [Github](https://github.com/ECEN499-NASA/Libero)
 * [Datasheets](./downloads/Datasheets.zip)
 
