@@ -1,0 +1,4 @@
+There are two different ways view the website:
+
+1. Unzip the website.zip and open the index.html
+2. Go to the following url - ecen499-nasa.github.io
