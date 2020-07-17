@@ -11,7 +11,7 @@ knitr::include_graphics("./site_libs/images/PolarFire.png")
 
 ## Mission Statement
 
-Create and test a system using Triple Modular Redundancy (TMR) with various configurations of the RISC-V open source instruction set on Microsemi’s PolarFire radiation tolerant FPGA. This is to test the possibility of using RISC-V architecture in space, specifically the possibility of implementing this system in the Caution and Warning System (CWS) in the xEMU. 
+Using the PolarFire FPGA Eval kit and a custom PCB, benchmark various RISC-V core configurations in Triple Modular Redundancy (TMR) for use in NASA's Caution and Warning System (CWS) in the Portable Life Support System (PLSS) of the newest space suit (xEMU - Exploratory Extravehicular Mobility Unit).
 
 ## Microcontroller 
 
@@ -36,7 +36,7 @@ We did the most work with SoftConsole. We added modules to operate the LVDS and 
 
 ### UART
 
-The LVDS Full-Duplex UART was set up using 3 IPs, two of them are used to create an LVDS signal and the other is used to receive and transmit UART signals. The PF_IOD_GENERIC_TX_C0_0 module turns the signal into an LVDS signal but in order to operate it we have to have clocks at different frequencies and one clock that is 90 degress out of phase. We included the PF_CCC_C0 to generate these clock signals As for the Full-Duplex UART, all that needed to change from last semester was the settings of the UART_apb module so it is configured correctly for Full-Duplex. Using these modules, we were able to transmit a working differential UART signal that ranges between 0 volts for low and 2 volts for high.
+The LVDS Full-Duplex UART was set up using 3 IPs, two of them are used to create an LVDS signal and the other is used to receive and transmit UART signals. The PF_IOD_GENERIC_TX_C0_0 module turns the signal into an LVDS signal but in order to operate it we have to have clocks at different frequencies and one clock that is 90 degrees out of phase. We included the PF_CCC_C0 to generate these clock signals As for the Full-Duplex UART, all that needed to change from last semester was the settings of the UART_apb module so it is configured correctly for Full-Duplex. Using these modules, we were able to transmit a working differential UART signal that ranges between 0 volts for low and 2 volts for high.
 
 ### SPI
 
